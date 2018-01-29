@@ -14,7 +14,12 @@ client.on("message", (message) => {
 	message.delete(); 
   }
   if (message.content === 'Dell') {
+	  let modRole = message.guild.roles.find("name", "Mod");
+    if(message.member.roles.has(modRole.id)) {
 	  message.channel.bulkDelete(100);
+    } else {
+	return message.reply("You don't have the permissions to do that.");
+    }
   }
   if (!message.content.startsWith(prefix)) return;
 
@@ -40,9 +45,17 @@ member.addRole(role).catch(console.error);
       message.guild.member(kickMember).kick();
       message.channel.sendMessage("Member Kicked.");
     } else {
-      return message.reply("You don't have the perms to kick members.");
+      return message.reply("You don't have the permission to kick members.");
     }
-  }
+  } else
+if (message.content === 'ban') {
+    let modRole = message.guild.roles.find("name", "Mod");
+    if(message.member.roles.has(modRole.id)) { 
+      let banMember = message.guild.member(message.mentions.users.first());
+      message.guild.member(banMember).ban();
+      message.channel.sendMessage("Member banned.");
+    } else {
+      return message.reply("You don't have the permission to ban members.");
 });
 client.login(process.env.BOT_TOKEN);
 // Math.floor(Math.random() * (9999 - 1000)) + 1000
