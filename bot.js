@@ -56,6 +56,8 @@ if (message.content === 'ban') {
       message.channel.sendMessage("Member banned.");
     } else {
       return message.reply("You don't have the permission to ban members.");
+	}
+}
 });
 client.login(process.env.BOT_TOKEN);
 // Math.floor(Math.random() * (9999 - 1000)) + 1000
