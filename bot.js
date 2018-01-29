@@ -62,11 +62,11 @@ if (message.content === 'ban') {
       message.channel.sendMessage("Member banned.");
     } else {
       return message.reply("You don't have the permission to ban members.");
-	} else
+	}
+} else
 	if (message.content === 'samsungnote7') {
 	message.channel.sendMessage(https://giphy.com/gifs/fire-skeleton-funny-B0yHMGZZLbBxS);
    }
-}
 });
 client.login(process.env.BOT_TOKEN);
 // Math.floor(Math.random() * (9999 - 1000)) + 1000
