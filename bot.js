@@ -21,6 +21,9 @@ client.on("message", (message) => {
 	return message.reply("You don't have the permissions to do that.");
     }
   }
+	if (message.content === 'Wink') {
+		message.channel.send(":wink:");
+	}
   if (!message.content.startsWith(prefix)) return;
 
   if (command == 'num') {
