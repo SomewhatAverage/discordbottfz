@@ -54,7 +54,7 @@ member.addRole(role).catch(console.error);
       return message.reply("You don't have the permission to kick members.");
     }
   } else
-if (message.content === 'ban') {
+if (command === 'ban') {
     let modRole = message.guild.roles.find("name", "Mod");
     if(message.member.roles.has(modRole.id)) { 
       let banMember = message.guild.member(message.mentions.users.first());
@@ -64,7 +64,7 @@ if (message.content === 'ban') {
       return message.reply("You don't have the permission to ban members.");
 	}
 } else
-	if (message.content === 'samsungnote7') {
+	if (command === 'samsungnote7') {
 	message.channel.sendMessage("https://giphy.com/gifs/fire-skeleton-funny-B0yHMGZZLbBxS");
    }
 });
