@@ -20,7 +20,7 @@ client.on("message", (message) => {
     } else {
 	return message.reply("You don't have the permissions to do that.");
     }
-  } else
+  }
 if(message.content === 'wink') {
 message.reply(<:wink:b277c5ffb43011a356200198cf76b22d>)
 }
