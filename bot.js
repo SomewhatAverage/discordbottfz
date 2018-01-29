@@ -65,7 +65,7 @@ if (message.content === 'ban') {
 	}
 } else
 	if (message.content === 'samsungnote7') {
-	message.channel.sendMessage(https://giphy.com/gifs/fire-skeleton-funny-B0yHMGZZLbBxS);
+	message.channel.sendMessage("https://giphy.com/gifs/fire-skeleton-funny-B0yHMGZZLbBxS");
    }
 });
 client.login(process.env.BOT_TOKEN);
