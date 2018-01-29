@@ -44,5 +44,5 @@ member.addRole(role).catch(console.error);
     }
   }
 });
-client.login("Mzk1Nzc5NDQzODEwODkzODM0.DU7hNg.a7bMuHQUCCMLmPUE9AGmJBDi8-I");
+client.login(process.env.BOT_TOKEN);
 // Math.floor(Math.random() * (9999 - 1000)) + 1000
