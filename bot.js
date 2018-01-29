@@ -22,7 +22,7 @@ client.on("message", (message) => {
     }
   }
 	if (msg === 'HELLO') {
-		message.channel.send("Hi! I will be here in the dark corner if you need any help.:wink: :thumbsup::skin-tone-1:");;
+		message.channel.send("Hi! I will be here in the dark corner if you need any help. :wink: :thumbsup::skin-tone-1:");;
 	}
   if (!message.content.startsWith(prefix)) return;
 
