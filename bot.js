@@ -22,8 +22,7 @@ client.on("message", (message) => {
     }
   }
 if(message.content === 'wink') {
-   const wink = client.emojis.find("name", "wink");
-   message.reply(`${wink}`);
+wink.toString()
 }
   if (!message.content.startsWith(prefix)) return;
 
