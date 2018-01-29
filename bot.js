@@ -59,9 +59,10 @@ if (command === 'ban') {
     if(message.member.roles.has(modRole.id)) { 
       let banMember = message.guild.member(message.mentions.users.first());
       message.guild.member(banMember).ban();
+      message.channel.sendMessage("https://giphy.com/gifs/H99r2HtnYs492");
       message.channel.sendMessage("Member banned.");
     } else {
-      return message.reply("You don't have the permission to ban members.");
+      return message.reply("You don't have the permission to ban members. However, https://giphy.com/gifs/H99r2HtnYs492");
 	}
 } else
 	if (command === 'samsungnote7') {
