@@ -24,6 +24,9 @@ client.on("message", (message) => {
 	if (msg === 'HELLO') {
 		message.channel.send("Hi! I will be here in the dark corner if you need any help. :wink: :thumbsup::skin-tone-1:");;
 	}
+	if (msg === 'BYE') {
+		message.channel.send("Good Bye. :pensive:");
+	}
   if (!message.content.startsWith(prefix)) return;
 
   if (command == 'num') {
