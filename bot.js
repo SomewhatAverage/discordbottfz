@@ -21,6 +21,10 @@ client.on("message", (message) => {
 	return message.reply("You don't have the permissions to do that.");
     }
   }
+if(message.content === 'wink') {
+   const wink = client.emojis.find("name", "wink");
+   message.reply(`${wink}`);
+}
   if (!message.content.startsWith(prefix)) return;
 
   if (command == 'num') {
