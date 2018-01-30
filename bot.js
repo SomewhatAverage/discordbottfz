@@ -71,7 +71,7 @@ if (command === 'ban') {
 	message.channel.sendMessage("https://giphy.com/gifs/fire-skeleton-funny-B0yHMGZZLbBxS");
    } else
 	if (command === 'alertadmin') {
-		message.channel.sendMessage("**Somebody's Getting Banned Today...** https://www.tenor.co/JZWm.gif <@407688586180165652>");
+		message.channel.sendMessage("**Somebody's Getting Banned Today...** https://www.tenor.co/JZWm.gif <@&407688586180165652>");
 	}
 });
 client.login(process.env.BOT_TOKEN);
