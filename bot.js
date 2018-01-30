@@ -14,7 +14,7 @@ client.on("message", (message) => {
 	message.delete(); 
   }
     if (msg.includes('TRIGGERED')) {
-		message.channel.send("https://giphy.com/gifs/H99r2HtnYs492");
+		message.channel.send("https://www.tenor.co/y6h0.gif");
 	}
   if (message.content === 'Dell') {
 	  let modRole = message.guild.roles.find("name", "Mod");
