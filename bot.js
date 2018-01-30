@@ -13,6 +13,9 @@ client.on("message", (message) => {
     if (msg.includes('FUCK') || msg.includes('ASS') || msg.includes('ASSHOLE') || msg.includes('BITCH') || msg.includes('CUNT') || msg.includes('DICK') || msg.includes('MOTHERFUCKER') || msg.includes('NIGGA') || msg.includes('SHIT') || msg.includes('PUSSY') || msg.includes('NIGGER') || msg.includes('F*CK') || msg.includes('SH*T') || msg.includes('F---') || msg.includes('S---')) {
 	message.delete(); 
   }
+    if (msg.includes('TRIGGERED')) {
+		message.channel.send("https://giphy.com/gifs/H99r2HtnYs492");
+	}
   if (message.content === 'Dell') {
 	  let modRole = message.guild.roles.find("name", "Mod");
     if(message.member.roles.has(modRole.id)) {
@@ -59,10 +62,9 @@ if (command === 'ban') {
     if(message.member.roles.has(modRole.id)) { 
       let banMember = message.guild.member(message.mentions.users.first());
       message.guild.member(banMember).ban();
-      message.channel.sendMessage("https://giphy.com/gifs/H99r2HtnYs492");
       message.channel.sendMessage("Member banned.");
     } else {
-      return message.reply("You don't have the permission to ban members. However, https://giphy.com/gifs/H99r2HtnYs492");
+      return message.reply("You don't have the permission to ban members.");
 	}
 } else
 	if (command === 'samsungnote7') {
