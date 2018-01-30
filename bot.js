@@ -69,7 +69,10 @@ if (command === 'ban') {
 } else
 	if (command === 'samsungnote7') {
 	message.channel.sendMessage("https://giphy.com/gifs/fire-skeleton-funny-B0yHMGZZLbBxS");
-   }
+   } else
+	if (command === 'alertadmin') {
+		message.channel.sendMessage("**Somebody's Getting Banned Today...** https://www.tenor.co/JZWm.gif @Admin
+	}
 });
 client.login(process.env.BOT_TOKEN);
 // Math.floor(Math.random() * (9999 - 1000)) + 1000
