@@ -74,7 +74,7 @@ if (command === 'ban') {
 		message.channel.sendMessage("**Somebody's Getting Banned Today...** https://www.tenor.co/JZWm.gif <@&354738248460795916>");
 	} else
 	if (command === '8ball') {
-	if (args[0] = '') {
+	if (args[0] == '') {
 	} else {
 	message.channel.sendMessage("Command in development...");
 	}
