@@ -1,31 +1,3 @@
-
-Skip to content
-This repository
-
-    Pull requests
-    Issues
-    Marketplace
-    Explore
-
-    @SomewhatAverage
-
-0
-0
-
-    0
-
-SomewhatAverage/discordbottfz
-Code
-Issues 0
-Pull requests 0
-Projects 0
-Wiki
-Insights
-Settings
-discordbottfz/bot.js
-ac546e6 Jan 31, 2018
-@SomewhatAverage SomewhatAverage Update bot.js
-85 lines (83 sloc) 3.2 KB
 // cd C:\Users\tfzam\Desktop\greeter-bot
 const Discord = require("discord.js");
 const client = new Discord.Client();
@@ -103,7 +75,7 @@ if (command === 'ban') {
 	} else
 	if (command === '8ball') {
 	if (args[0] = '') {
-	} else
+	} else {
 	message.channel.sendMessage("Command in development...");
 	}
 }
