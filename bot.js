@@ -72,7 +72,13 @@ if (command === 'ban') {
    } else
 	if (command === 'alertadmin') {
 		message.channel.sendMessage("**Somebody's Getting Banned Today...** https://www.tenor.co/JZWm.gif <@&354738248460795916>");
+	} else
+	if (command === '8ball') {
+	if args[0] = '' {
+	} else
+	message.channel.sendMessage("Command in development...");
 	}
+}
 });
 client.login(process.env.BOT_TOKEN);
 // Math.floor(Math.random() * (9999 - 1000)) + 1000
