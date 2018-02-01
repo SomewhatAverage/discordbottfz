@@ -78,7 +78,7 @@ if (command === 'ban') {
 	message.channel.sendMessage("Please ask a question!");
 	} else {
 	if (args[0] != undefined) {
-	var randomNum = Math.floor(Math.random() * (10 - 1)) + 10;
+	var randomNum = Math.floor(Math.random() * (11 - 1)) + 1;
 	switch(randomNum) {
 	case 1:
 	message.channel.sendMessage("Definitely not.");
