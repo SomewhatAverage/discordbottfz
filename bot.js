@@ -75,8 +75,41 @@ if (command === 'ban') {
 	} else
 	if (command === '8ball') {
 	if (args[0] == undefined) {
+	message.channel.sendMessage("Please ask a question!");
 	} else {
-	message.channel.sendMessage("Command in development...");
+	var randomNum = Math.floor(Math.random() * (10 - 1)) + 10;
+	switch(randomNum) {
+	case '1':
+	message.channel.sendMessage("Definitely not.");
+	break;
+	case '2':
+	message.channel.sendMessage("If you're lucky, yes.");
+	break;
+	case '3':
+	message.channel.sendMessage("Possibly, but only possibly.");
+	break;
+	case '4':
+	message.channel.sendMessage("Fair chance.");
+	break;
+	case '5':
+	message.channel.sendMessage("If you work for it, it could happen.");
+	break;
+	case '6':
+	message.channel.sendMessage("Maybe. Peut être.");
+	break;
+	case '7':
+	message.channel.sendMessage("You could. I'll have to check back on that one.");
+	break;
+	case '8':
+	message.channel.sendMessage("Probable. Very probable.");
+	break;
+	case '9':
+	message.channel.sendMessage("No to you. Yes to your best friend.");
+	break;
+	case '10':
+	message.channel.sendMesssage("Yes, yes, definitely yes!");
+	break;
+	}
 	}
 }
 });
