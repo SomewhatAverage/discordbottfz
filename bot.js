@@ -77,6 +77,7 @@ if (command === 'ban') {
 	if (args[0] == undefined) {
 	message.channel.sendMessage("Please ask a question!");
 	} else {
+	if (args[0] != undefined) {
 	var randomNum = Math.floor(Math.random() * (10 - 1)) + 10;
 	switch(randomNum) {
 	case '1':
@@ -112,6 +113,7 @@ if (command === 'ban') {
 	}
 	}
 }
+	}
 });
 client.login(process.env.BOT_TOKEN);
 // Math.floor(Math.random() * (9999 - 1000)) + 1000
