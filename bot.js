@@ -16,7 +16,7 @@ client.on("message", (message) => {
     if (msg.includes('TRIGGERED')) {
 		message.channel.send("https://www.tenor.co/y6h0.gif");
 	}
-  if (message.content === 'Dell') {
+  if (msg === 'Dell') {
 	  message.channel.bulkDelete(100);
   }
 	if (msg === 'HELLO') {
