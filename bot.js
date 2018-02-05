@@ -10,18 +10,23 @@ client.on("message", (message) => {
   const command = args.shift().toLowerCase();
   var msg = message.content.toUpperCase();
   // Exit and stop if it's not there
-    if (msg.includes('FUCK') || msg.includes('ASS') || msg.includes('ASSHOLE') || msg.includes('BITCH') || msg.includes('CUNT') || msg.includes('DICK') || msg.includes('MOTHERFUCKER') || msg.includes('NIGGA') || msg.includes('SHIT') || msg.includes('PUSSY') || msg.includes('NIGGER') || msg.includes('F*CK') || msg.includes('SH*T') || msg.includes('F---') || msg.includes('S---')) {
+    if (msg.includes('FUCK') || msg.includes('aSS') || msg.includes('ASSHOLE') || msg.includes('BITCH') || msg.includes('CUNT') || msg.includes('DICK') || msg.includes('MOTHERFUCKER') || msg.includes('NIGGA') || msg.includes('SHIT') || msg.includes('PUSSY') || msg.includes('NIGGER') || msg.includes('F*CK') || msg.includes('SH*T') || msg.includes('F---') || msg.includes('S---')) {
 	message.delete(); 
   }
     if (msg.includes('TRIGGERED')) {
 		message.channel.send("https://www.tenor.co/y6h0.gif");
-	} else
-  if (msg === 'Dell') {
+	}
+  if (message.content === 'Dell') {
+	  let modRole = message.guild.roles.find("name", "Mod");
+    if(message.member.roles.has(modRole.id)) {
 	  message.channel.bulkDelete(100);
-  } else
+    } else {
+	return message.reply("You don't have the permissions to do that.");
+    }
+  }
 	if (msg === 'HELLO') {
 		message.channel.send("Hi! I will be here in the dark corner if you need any help. :wink: :thumbsup::skin-tone-1:");;
-	} else
+	}
 	if (msg === 'BYE') {
 		message.channel.send("Good Bye. :pensive:");
 	}
