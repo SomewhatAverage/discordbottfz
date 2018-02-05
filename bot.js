@@ -15,13 +15,13 @@ client.on("message", (message) => {
   }
     if (msg.includes('TRIGGERED')) {
 		message.channel.send("https://www.tenor.co/y6h0.gif");
-	}
+	} else
   if (msg === 'Dell') {
 	  message.channel.bulkDelete(100);
-  }
+  } else
 	if (msg === 'HELLO') {
 		message.channel.send("Hi! I will be here in the dark corner if you need any help. :wink: :thumbsup::skin-tone-1:");;
-	}
+	} else
 	if (msg === 'BYE') {
 		message.channel.send("Good Bye. :pensive:");
 	}
