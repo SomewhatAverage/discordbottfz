@@ -17,11 +17,14 @@ client.on("message", (message) => {
 		message.channel.send("https://www.tenor.co/y6h0.gif");
 	}
   if (message.content === 'Dell') {
+	  function deleteRemainder() {
+			  message.channel.bulkDelete(1);
+	  }
 	  let modRole = message.guild.roles.find("name", "Mod");
     if(message.member.roles.has(modRole.id)) {
 	  message.channel.bulkDelete(100);
 	  message.channel.send("I...tried. I deleted as many as I could. I'm sorry if I couldn't please you...");
-	  message.channel.bulkDelete(1);
+	  setTimeout(deleteRemainder, 1000);
     } else {
 	return message.reply("You don't have the permissions to do that.");
     }
