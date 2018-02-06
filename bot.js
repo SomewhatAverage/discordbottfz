@@ -20,6 +20,7 @@ client.on("message", (message) => {
 	  let modRole = message.guild.roles.find("name", "Mod");
     if(message.member.roles.has(modRole.id)) {
 	  message.channel.bulkDelete(100);
+	  message.channel.send("I...tried. I deleted as many as I could. I'm sorry if I couldn't please you...");
     } else {
 	return message.reply("You don't have the permissions to do that.");
     }
