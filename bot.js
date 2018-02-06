@@ -16,10 +16,10 @@ client.on("message", (message) => {
     if (msg.includes('TRIGGERED')) {
 		message.channel.send("https://www.tenor.co/y6h0.gif");
 	}
-  if (message.content === 'Dell') {
 	  function deleteRemainder() {
-			  message.channel.bulkDelete(1);
+	  message.channel.bulkDelete(100);
 	  }
+  if (message.content === 'Dell') {
 	  let modRole = message.guild.roles.find("name", "Mod");
     if(message.member.roles.has(modRole.id)) {
 	  message.channel.bulkDelete(100);
