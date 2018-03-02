@@ -71,8 +71,8 @@ if (command === 'ban') {
 	message.channel.sendMessage("https://giphy.com/gifs/fire-skeleton-funny-B0yHMGZZLbBxS");
    } else
 	if (command === 'getcat') {
-	message.channel.sendMessage(<img src=http://thecatapi.com/api/images/get?format=src&type=gif>);
-				    } else
+	message.channel.sendMessage("http://thecatapi.com/api/images/get?format=src&type=gif>");
+	} else
 	if (command === 'alertadmin') {
 		message.channel.sendMessage("**Somebody's Getting Banned Today...** https://www.tenor.co/JZWm.gif <@&354738248460795916>");
 	} else
