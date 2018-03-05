@@ -79,7 +79,7 @@ if (command === 'ban') {
 	if (command === 'quadsolve') {
 	function quadratic(a, b, c) {
 var firstValue = (-(b) + Math.sqrt(Math.pow(b, 2)-(4*a*c)))/(2*a)
-var secondValue = (-(b) + Math.sqrt(Math.pow(b, 2)-(4*a*c)))/(2*a)
+var secondValue = (-(b) - Math.sqrt(Math.pow(b, 2)-(4*a*c)))/(2*a)
 message.channel.sendMessage(firstValue);
 message.channel.sendMessage(secondValue)
 }
