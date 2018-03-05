@@ -86,7 +86,7 @@ message.channel.sendMessage(secondValue)
 	let aVal = args[0];
 	let bVal = args[1];
 	let cVal = args[2];
-	quadratic(a, b, c);
+	quadratic(aVal, bVal, cVal);
 	} else
 	if (command === '8ball') {
 	if (args[0] == undefined) {
