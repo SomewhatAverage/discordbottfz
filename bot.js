@@ -102,7 +102,7 @@ message.channel.sendMessage(secondValue)
 	quadratic(aVal, bVal, cVal);
 	} else
 	if (command === 'forgot') {
-	message.channel.sendMessage(message.author); /* @everyone {user} forgot what their homework was... :sob: */ 
+	message.channel.sendMessage(message.author.username); /* @everyone {user} forgot what their homework was... :sob: */ 
 	} else
 	if (command === '8ball') {
 	if (args[0] == undefined) {
