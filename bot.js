@@ -60,7 +60,7 @@ if(message.member.roles.has(modRole.id)) {
 let role = message.guild.roles.find("name", "Muted");
 let member = message.mentions.members.first();
 member.removeRole(role).catch(console.error);
-message.channel.sendMessage("Member Muted.");
+message.channel.sendMessage("Member Unmuted.");
 } else {
 return message.reply("You don't have the permission to unmute members.");
 }
