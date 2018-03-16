@@ -101,6 +101,9 @@ message.channel.sendMessage(secondValue)
 	let cVal = args[2];
 	quadratic(aVal, bVal, cVal);
 	} else
+	if (command === 'forgot') {
+	message.channel.sendMessage(message.author); /* @everyone {user} forgot what their homework was... :sob: */ 
+	} else
 	if (command === '8ball') {
 	if (args[0] == undefined) {
 	message.channel.sendMessage("Please ask a question!");
