@@ -171,10 +171,10 @@ message.channel.sendMessage(secondValue)
 	}
 });
 client.on('guildMemberAdd', member => {
-    member.guild.channels.get('410196865775304704').send('**' + member.user.username + '**, has joined the server!'); 
+    member.guild.channels.get('410196865775304704').send('**' + member.user.username + '** has joined the server!'); 
 });
 client.on('guildMemberRemove', member => {
-    member.guild.channels.get('410196865775304704').send('**' + member.user.username + '**, has left the server.'); 
+    member.guild.channels.get('410196865775304704').send('**' + member.user.username + '** has left the server.'); 
 });
 client.login(process.env.BOT_TOKEN);
 // Math.floor(Math.random() * (9999 - 1000)) + 1000
