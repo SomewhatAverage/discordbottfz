@@ -50,9 +50,12 @@ member.addRole(role).catch(console.error);
   if (command === 'kick') {
     let modRole = message.guild.roles.find("name", "Mod");
     if(message.member.roles.has(modRole.id)) { 
-      let kickMember = message.guild.member(message.mentions.users.first());
-      message.guild.member(kickMember).kick();
+      var member= message.mentions.members.first();
+      member.kick().then((member) => {
       message.channel.sendMessage("Member Kicked.");
+      }).catch(() => {
+      message.channel.send("Failed to kick member.");
+      });
     } else {
       return message.reply("You don't have the permission to kick members.");
     }
