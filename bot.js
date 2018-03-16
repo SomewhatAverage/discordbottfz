@@ -43,9 +43,13 @@ client.on("message", (message) => {
 	 message.channel.send("( ͡° ͜ʖ ͡°)");
  } else
 if (command === 'mute') {
+let modRole = message.guild.roles.find("name", "Mod");
+if(message.member.roles.has(modRole.id)) {
 let role = message.guild.roles.find("name", "Muted");
 let member = message.mentions.members.first();
 member.addRole(role).catch(console.error);
+message.channel.sendMessage("Member Muted.");
+}
 } else
   if (command === 'kick') {
     let modRole = message.guild.roles.find("name", "Mod");
