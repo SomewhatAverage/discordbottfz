@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 client.on("ready", () => {
 console.log("I am ready!");
-client.user.setActivity('YouTube', { type: 'WATCHING' })
+client.user.setGame(`on ${client.guilds.size} servers`);
 });
 const prefix = "!";
 client.on("message", (message) => {
