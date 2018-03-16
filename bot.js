@@ -125,6 +125,39 @@ message.channel.sendMessage(secondValue)
 	case 10:
 	message.channel.sendMesssage("Yes, yes, definitely yes!");
 	break;
+	case 10:
+	message.channel.sendMesssage("Yes, yes, definitely yes!");
+	break;
+	case 11:
+	message.channel.sendMesssage("Of course not. What were you thinking?");
+	break;
+	case 12:
+	message.channel.sendMesssage("Yes, it will!");
+	break;
+	case 13:
+	message.channel.sendMesssage("Error 978: Did not wish to respond. Please never try again.");
+	break;
+	case 14:
+	message.channel.sendMesssage("It is true. I shall command it.");
+	break;
+	case 15:
+	message.channel.sendMesssage("When conditions are in favor.");
+	break;
+	case 16:
+	message.channel.sendMesssage("No, and never!");
+	break;
+	case 17:
+	message.channel.sendMesssage("Once in a blue moon, sadly.");
+	break;
+	case 18:
+	message.channel.sendMesssage("My vision is clouded. It could be either.");
+	break;
+	case 19:
+	message.channel.sendMesssage("Yes, yes, YES!");
+	break;
+	case 20:
+	message.channel.sendMesssage("Why not? Because I said so. No, okay?");
+	break;
 	}
 	}
 }
