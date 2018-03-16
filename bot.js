@@ -107,6 +107,12 @@ message.channel.sendMessage(secondValue)
 	if (command === 'forgot') {
 	message.channel.sendMessage("@everyone <@" + message.author.id + "> forgot what their homework was... :sob:");
 	} else
+	if (command === 'birthday') {
+	message.channel.sendMessage("Happy Birthday! :birthday: :gift: :tada::wink::balloon:");
+	} else
+	if (command === 'whynaut') {
+	message.channel.sendMessage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqK2Z5YQEJMTmvNn8XYx7L-J_YZryUXCA3OZ6IPgV0OPbqjiT_");
+	} else
 	if (command === '8ball') {
 	if (args[0] == undefined) {
 	message.channel.sendMessage("Please ask a question!");
