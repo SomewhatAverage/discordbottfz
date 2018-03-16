@@ -123,37 +123,37 @@ message.channel.sendMessage(secondValue)
 	message.channel.sendMessage("No to you. Yes to your best friend.");
 	break;
 	case 10:
-	message.channel.sendMesssage("Yes, yes, definitely yes!");
+	message.channel.sendMessage("Yes, yes, definitely yes!");
 	break;
 	case 11:
-	message.channel.sendMesssage("Yes, yes, definitely yes!");
+	message.channel.sendMessage("Yes, yes, definitely yes!");
 	break;
 	case 12:
-	message.channel.sendMesssage("Of course not. What were you thinking?");
+	message.channel.sendMessage("Of course not. What were you thinking?");
 	break;
 	case 13:
-	message.channel.sendMesssage("Yes, it will!");
+	message.channel.sendMessage("Yes, it will!");
 	break;
 	case 14:
-	message.channel.sendMesssage("Error 978: Did not wish to respond. Please never try again.");
+	message.channel.sendMessage("Error 978: Did not wish to respond. Please never try again.");
 	break;
 	case 15:
-	message.channel.sendMesssage("It is true. I shall command it.");
+	message.channel.sendMessage("It is true. I shall command it.");
 	break;
 	case 16:
-	message.channel.sendMesssage("When conditions are in favor.");
+	message.channel.sendMessage("When conditions are in favor.");
 	break;
 	case 17:
-	message.channel.sendMesssage("No, and never!");
+	message.channel.sendMessage("No, and never!");
 	break;
 	case 18:
-	message.channel.sendMesssage("Once in a blue moon, sadly.");
+	message.channel.sendMessage("Once in a blue moon, sadly.");
 	break;
 	case 19:
-	message.channel.sendMesssage("My vision is clouded. It could be either.");
+	message.channel.sendMessage("My vision is clouded. It could be either.");
 	break;
 	case 20:
-	message.channel.sendMesssage("Yes, yes, YES!");
+	message.channel.sendMessage("Yes, yes, YES!");
 	break;
 	}
 	}
