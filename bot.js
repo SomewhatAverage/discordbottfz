@@ -62,13 +62,16 @@ member.addRole(role).catch(console.error);
   } else
 if (command === 'ban') {
     let modRole = message.guild.roles.find("name", "Mod");
-    if(message.member.roles.has(modRole.id)) { 
-      let banMember = message.guild.member(message.mentions.users.first());
-      message.guild.member(banMember).ban();
-      message.channel.sendMessage("Member banned.");
+	if(message.member.roles.has(modRole.id)) { 
+      var member= message.mentions.members.first();
+      member.ban().then((member) => {
+      message.channel.sendMessage("Member Banned.");
+      }).catch(() => {
+      message.channel.send("Failed to ban member.");
+      });
     } else {
-      return message.reply("You don't have the permission to ban members.");
-	}
+      return message.reply("You don't have the permission to kick members.");
+    }   
 } else
 	if (command === 'samsungnote7') {
 	message.channel.sendMessage("https://giphy.com/gifs/fire-skeleton-funny-B0yHMGZZLbBxS");
