@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 client.on("ready", () => {
 console.log("I am ready!");
-client.user.setPresence({ game: { name: 'on the MMS Discord Server!' }, status: 'online' })
+client.user.setActivity('YouTube', { type: 'WATCHING' })
 });
 const prefix = "!";
 client.on("message", (message) => {
