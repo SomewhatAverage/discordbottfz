@@ -3,6 +3,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 client.on("ready", () => {
 console.log("I am ready!");
+bot.user.setActivity('on the MMS Discord Server');
 });
 const prefix = "!";
 client.on("message", (message) => {
