@@ -24,10 +24,10 @@ client.on("message", (message) => {
 	return message.reply("You don't have the permissions to do that.");
     }
   }
-	if (msg === 'HELLO') {
+	if (msg.includes === 'HELLO') {
 		message.channel.send("Hi! I will be here in the dark corner if you need any help. :wink: :thumbsup::skin-tone-1:");;
 	}
-	if (msg === 'BYE') {
+	if (msg.includes === 'BYE') {
 		message.channel.send("Good Bye. :pensive:");
 	}
   if (!message.content.startsWith(prefix)) return;
