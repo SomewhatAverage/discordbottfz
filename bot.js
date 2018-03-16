@@ -87,6 +87,9 @@ if (command === 'ban') {
 	if (command === 'alertadmin') {
 		message.channel.sendMessage("**Somebody's Getting Banned Today...** https://www.tenor.co/JZWm.gif <@&354738248460795916>");
 	} else
+	if (command === 'alertmod') {
+	message.channel.sendMessage("Let the force be with the <@&376111381331836939> and you as well...");
+	} else
 	/* if (command === 'help') {
 message.channel.sendMessage("Commands:\n!num - Generates four random numbers to play Mr. Pizzuta's game\n!clear - Clears messages \n!lenny - Posts lenny test \n!mute - Mutes member \n!kick - Kicks member \n!ban - Bans member" */
 	if (command === 'quadsolve') {
@@ -177,10 +180,10 @@ message.channel.sendMessage(secondValue)
 	}
 });
 client.on('guildMemberAdd', member => {
-    member.guild.channels.get('410196865775304704').send('@everyone **' + member.user.username + '** has joined the server!'); 
+    member.guild.channels.get('410196865775304704').send('@everyone **<@' + member.user.id + '>** has joined the server!'); 
 });
 client.on('guildMemberRemove', member => {
-    member.guild.channels.get('410196865775304704').send('@everyone **' + member.user.username + '** has left the server.'); 
+    member.guild.channels.get('410196865775304704').send('@everyone **<@' + member.user.id + '>** has left the server.'); 
 });
 client.login(process.env.BOT_TOKEN);
 // Math.floor(Math.random() * (9999 - 1000)) + 1000
