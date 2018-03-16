@@ -5,8 +5,8 @@ client.on("ready", () => {
 console.log("I am ready!");
 });
 const prefix = "!";
-client.user.setActivity('YouTube', { type: 'WATCHING' })
 client.on("message", (message) => {
+client.user.setActivity('YouTube', { type: 'WATCHING' })
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   var msg = message.content.toUpperCase();
