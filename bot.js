@@ -93,7 +93,7 @@ message.channel.sendMessage(secondValue)
 	message.channel.sendMessage("Please ask a question!");
 	} else {
 	if (args[0] != undefined) {
-	var randomNum = Math.floor(Math.random() * (11 - 1)) + 1;
+	var randomNum = Math.floor(Math.random() * (20 - 1)) + 1;
 	switch(randomNum) {
 	case 1:
 	message.channel.sendMessage("Definitely not.");
