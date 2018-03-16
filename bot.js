@@ -87,7 +87,7 @@ if (command === 'ban') {
 		message.channel.sendMessage("**Somebody's Getting Banned Today...** https://www.tenor.co/JZWm.gif <@&354738248460795916>");
 	} else
 	/* if (command === 'help') {
-	message.channel.sendMessage("Commands:\n!num - Generates four random numbers to play Mr. Pizzuta's game\n!clear - Clears messages \n!lenny - Posts lenny image \n!mute - Mutes member \n!kick - Kicks member \n" */
+message.channel.sendMessage("Commands:\n!num - Generates four random numbers to play Mr. Pizzuta's game\n!clear - Clears messages \n!lenny - Posts lenny test \n!mute - Mutes member \n!kick - Kicks member \n!ban - Bans member" */
 	if (command === 'quadsolve') {
 	function quadratic(a, b, c) {
 var firstValue = (-(b) + Math.sqrt(Math.pow(b, 2)-(4*a*c)))/(2*a)
