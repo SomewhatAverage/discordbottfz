@@ -95,10 +95,6 @@ if (command === 'ban') {
 	if (command === 'samsungnote7') {
 	message.channel.sendMessage("https://giphy.com/gifs/fire-skeleton-funny-B0yHMGZZLbBxS");
    } else
-	if (command === 'testrole') {
-	let modRole = message.guild.roles.find("name", args[0]);
-	message.channel.sendMessage(modRole);
-} else
 	if (command === 'getcat') {
 	message.channel.sendMessage("http://thecatapi.com/api/images/get?format=src&type=gif");
 	} else
