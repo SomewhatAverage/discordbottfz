@@ -97,7 +97,7 @@ if (command === 'ban') {
    } else
 	if (command === 'testrole') {
 	let modRole = message.guild.roles.find("name", args[0]);
-	message.channel.sendMessage(modRole);
+	message.channel.sendMessage(args[0]);
 } else
 	if (command === 'getcat') {
 	message.channel.sendMessage("http://thecatapi.com/api/images/get?format=src&type=gif");
