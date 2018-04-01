@@ -12,7 +12,7 @@ client.on("message", (message) => {
   var msg = message.content.toUpperCase();
   // Exit and stop if it's not there
 if (message.author.bot) return;
-    if (msg.includes('FUCK') || msg.includes('aSS') || msg.includes('ASSHOLE') || msg.includes('BITCH') || msg.includes('CUNT') || msg.includes('DICK') || msg.includes('MOTHERFUCKER') || msg.includes('NIGGA') || msg.includes('SHIT') || msg.includes('PUSSY') || msg.includes('NIGGER') || msg.includes('F*CK') || msg.includes('SH*T') || msg.includes('F---') || msg.includes('S---')) {
+    if (msg.includes('FUCK') || msg.includes('APRIL') || msg.includes('FOOLS') || msg.includes('aSS') || msg.includes('ASSHOLE') || msg.includes('BITCH') || msg.includes('CUNT') || msg.includes('DICK') || msg.includes('MOTHERFUCKER') || msg.includes('NIGGA') || msg.includes('SHIT') || msg.includes('PUSSY') || msg.includes('NIGGER') || msg.includes('F*CK') || msg.includes('SH*T') || msg.includes('F---') || msg.includes('S---')) {
 	message.delete(); 
   }
     if (msg.includes('TRIGGERED')) {
