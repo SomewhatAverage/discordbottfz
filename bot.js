@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.on("ready", () => {
 console.log("I am ready!");
 client.user.setActivity(`on the MMS Discord server!`);
-	client.channels.get('410196865775304704).send('oops');
+	client.channels.get('410196865775304704').send('oops');
 	  function getNewDate() {
 	var currentDate = new Date();
 	if(currentDate == 'Sun Apr 01 2018 21:00:00 GMT-0400 (Eastern Daylight Time)') {
