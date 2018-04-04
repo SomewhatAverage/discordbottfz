@@ -4,41 +4,6 @@ const client = new Discord.Client();
 client.on("ready", () => {
 console.log("I am ready!");
 client.user.setActivity(`on the MMS Discord server!`);
-	client.channels.get('410196865775304704').send('oops');
-	  function getNewDate() {
-	var currentDate = new Date();
-	if(currentDate == 'Sun Apr 01 2018 21:00:00 GMT-0400 (Eastern Daylight Time)') {
-	client.channels.get('410196865775304704').send('Alright, @everyone, time to wrap up this server once and for all!');
-  }
-  if(currentDate == 'Sun Apr 01 2018 21:00:02 GMT-0400 (Eastern Daylight Time)') {
-	client.channels.get('410196865775304704').send('Let me just get Tahmid over here...');
-  }
-  if(currentDate == 'Sun Apr 01 2018 21:00:07 GMT-0400 (Eastern Daylight Time)') {
-	client.channels.get('410196865775304704').send('Hey! <@395764893430841363>!');
-  }
-  if(currentDate == 'Sun Apr 01 2018 21:00:12 GMT-0400 (Eastern Daylight Time)') {
-	client.channels.get('410196865775304704').send("Oh well, I guess I'll have to do this myself...");
-  }
-  if(currentDate == 'Sun Apr 01 2018 21:00:17 GMT-0400 (Eastern Daylight Time)') {
-	client.channels.get('410196865775304704').send("What's this? A radio message? Turn it on! Listen, @everyone!");
-  }
-   if(currentDate == 'Sun Apr 01 2018 21:00:22 GMT-0400 (Eastern Daylight Time)') {
-	client.channels.get('410196865775304704').send("Oh, it's a message from Tahmid! Let's hear what it says!");
-  }
-   if(currentDate == 'Sun Apr 01 2018 21:00:24 GMT-0400 (Eastern Daylight Time)') {
-	client.channels.get('410196865775304704').send('"April Fools, everybody! You should have thought twice if you originally thought it was April Fools."');
-  }
-   if(currentDate == 'Sun Apr 01 2018 21:00:26 GMT-0400 (Eastern Daylight Time)') {
-	client.channels.get('410196865775304704').send('"If you want to, you could use <@322476503076175872>' + "'" + 's server, too. But if you' + "'" + 're cool, please stay with me..."');
-  }
- if(currentDate == 'Sun Apr 01 2018 21:00:32 GMT-0400 (Eastern Daylight Time)') {
-	client.channels.get('410196865775304704').send("That's it! Happy Christmas, @everyone!");
-  }
-  }
-  function repeatNewDate() {
-	  setInterval(getNewDate, 1000);
-  }
-  repeatNewDate();
 });
 const prefix = "!";
 client.on("message", (message) => {
@@ -47,7 +12,7 @@ client.on("message", (message) => {
   var msg = message.content.toUpperCase();
   // Exit and stop if it's not there
 if (message.author.bot) return;
-    if (msg.includes('FUCK') || msg.includes('APRIL') || msg.includes('FOOLS') || msg.includes('aSS') || msg.includes('ASSHOLE') || msg.includes('BITCH') || msg.includes('CUNT') || msg.includes('DICK') || msg.includes('MOTHERFUCKER') || msg.includes('NIGGA') || msg.includes('SHIT') || msg.includes('PUSSY') || msg.includes('NIGGER') || msg.includes('F*CK') || msg.includes('SH*T') || msg.includes('F---') || msg.includes('S---')) {
+    if (msg.includes('FUCK') || msg.includes('aSS') || msg.includes('ASSHOLE') || msg.includes('BITCH') || msg.includes('CUNT') || msg.includes('DICK') || msg.includes('MOTHERFUCKER') || msg.includes('NIGGA') || msg.includes('SHIT') || msg.includes('PUSSY') || msg.includes('NIGGER') || msg.includes('F*CK') || msg.includes('SH*T') || msg.includes('F---') || msg.includes('S---')) {
 	message.delete(); 
   }
     if (msg.includes('TRIGGERED')) {
