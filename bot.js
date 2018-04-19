@@ -119,7 +119,11 @@ message.channel.sendMessage(secondValue)
 	quadratic(aVal, bVal, cVal);
 	} else
 	if (command === 'forgot') {
+		if (message.author.id = '180127698159534081') {
+			message.channel.send("No."):
+		} else {
 	message.channel.sendMessage("@everyone <@" + message.author.id + "> forgot what their homework was... :sob:");
+	}
 	} else
 	if (command === 'birthday') {
 	message.channel.sendMessage("Happy Birthday! :birthday: :gift: :tada::wink::balloon:");
