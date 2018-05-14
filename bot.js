@@ -120,7 +120,7 @@ message.channel.sendMessage(secondValue)
 	} else
 	if (command === 'forgot') {
 		if (message.author.username === 'ﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠJadenStar10') {
-			message.channel.sendMessage("No."):
+			message.channel.sendMessage("No.");
 		} else {
 	message.channel.sendMessage("@everyone <@" + message.author.id + "> forgot what their homework was... :sob:");
 	}
