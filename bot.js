@@ -124,7 +124,7 @@ message.channel.sendMessage(secondValue)
 		} else {
 	message.channel.sendMessage("@everyone <@" + message.author.id + "> forgot what their homework was... :sob:");
 	}
-	] else
+	} else
 	if (command === 'birthday') {
 	message.channel.sendMessage("Happy Birthday! :birthday: :gift: :tada::wink::balloon:");
 	} else
