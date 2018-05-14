@@ -119,7 +119,7 @@ message.channel.sendMessage(secondValue)
 	quadratic(aVal, bVal, cVal);
 	} else
 	if (command === 'forgot') {
-		if (message.author.id === '1001111111111100010010') {
+		if (message.author.username === 'ﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠJadenStar10') {
 			message.channel.sendMessage("No."):
 		} else {
 	message.channel.sendMessage("@everyone <@" + message.author.id + "> forgot what their homework was... :sob:");
